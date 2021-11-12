@@ -85,9 +85,6 @@ namespace Chip8
 
 				i++;
 			}
-
-			//button.Style.Width = Length.Pixels( 200 );
-			//button.Style.Width = Length.Pixels( 100 );
 		}
 	}
 	public class Chip8Pixel : Panel
