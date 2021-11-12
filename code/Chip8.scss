@@ -1,0 +1,131 @@
+.chip8Background {
+	position: absolute;
+	background-color: #222222;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.displayRoot {
+	position: absolute;
+	display: flex;
+	pointer-events: all;
+	overflow: visible;
+	aspect-ratio: 2;
+	width: 30%;
+	background-color: black;
+}
+
+.chip8Pixel {
+	//transition: background-color 0.2s ease-out 0s;
+	position: absolute;
+	background-color: black;
+}
+
+.pixelActive {
+	background-color: white;
+}
+
+.keypad {
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	background-color: #111;
+	border-radius: 5%;
+	width: 15%;
+	aspect-ratio: 1;
+	left: 8.75%;
+}
+
+.keypadButtonContainer {
+	width: 25%;
+	aspect-ratio: 1;
+	padding: 2.5%;
+}
+
+.clickyButton {
+	transition: background-color 0.05s cubic-bezier() 0;
+	background-color: #333;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #444;
+	}
+
+	&.isHolding {
+		background-color: dodgerblue;
+	}
+}
+
+.keypadButton {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	border-radius: 15%;
+	font-family: Poppins;
+	font-size: 1.6vw;
+	font-weight: 900;
+	color: white;
+	text-shadow: 3px 3px 3px rgba( black, 0.8 );
+	justify-content: center;
+	align-items: center;
+}
+
+.romInputContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	background-color: #111;
+	//border-radius: 5%;
+	width: 15%;
+	aspect-ratio: 1;
+	right: 8.75%;
+	//overflow: scroll;
+	cursor: text;
+}
+
+.romInput {
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	width: 95%;
+	height: 95%;
+	font-family: 'Courier New';
+	font-size: 0.5vw;
+	font-weight: 5000;
+	color: white;
+	overflow: hidden;
+}
+
+.tipLabel {
+	overflow: visible;
+	display: flex;
+	position: absolute;
+	font-family: Poppins;
+	font-size: 2vw;
+	font-weight: 900;
+	color: white;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: flex-end;
+	text-shadow: 5px 5px 5px rgba(black, 0.8);
+	transform: translate(0, -105%);
+}
+
+.runButton {
+	display: flex;
+	position: absolute;
+	font-family: Poppins;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	font-size: 2vw;
+	font-weight: 900;
+	color: white;
+	width: 75%;
+	aspect-ratio: 3;
+	bottom: -30%;
+}
